@@ -1,3 +1,4 @@
+
 *{
     font-family: inter;
     margin: 0;
@@ -9,6 +10,7 @@
     padding: 30px;
     }
 #titulosuperior{
+    text-justify: initial;
     padding-top:100px ;
     font-size: 60px;
     margin-left: 25px;
@@ -30,44 +32,47 @@
     font-weight: 600;
 }   
 #textos{
-    display:grid;
-    grid-template-columns: repeat(3, 405px);
+    display:flex;
+    flex-wrap: initial;
+    justify-content: space-around;
     font-size: 20px;
+    
+    align-items: center;
     padding-top: 100px;
-    padding-left: 170px;
+    padding-left: 170;
     padding-bottom: 100px;
 }
 
 #bannertexto-foto{
-    
+    display: flex;
+    flex-wrap: initial;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
     background-color: white;
-    padding-top: 100px;
-    padding-left: 70px;
-    padding-bottom: 300px;
     font-size: 24px;
+    padding-left: 100px;
     
 }
 #texto{
     font-weight: 300;
-    padding-top: 170px;
+    padding-top: 10px;
     font-size: 24px;
 }
 #titulobanner{
     font-size: 40px;
     font-weight: 500;
 }
-#modelo{
-    float: right;
-    margin-right: 550px;   
-}
-#formulário{
-    font-family: Raleway;
+
+#formulario{
+  
     text-align: center;
-    padding-left: 248px;
+    align-items: center;
+    justify-content: center;
     background-color: #303030;
-    padding-right: 770px;
     color: #fff;
     padding-top: 100px;
+    padding-bottom: 100px;
 
 }
 #tituloform{
@@ -84,7 +89,6 @@ height: 72px;
 margin-top: 50px;
 border-radius: 10px;
 padding-left: 20px;
-
 }
 #botao{
     margin-top: 100px;
@@ -100,7 +104,8 @@ padding-left: 20px;
     border: none;
     cursor: pointer;
 }
-input::placeholder {
+input::placeholder{ 
+    font-family: raleway;
     opacity: 0.3; 
     color: #000; 
     font-size: 24px; 
